@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+<html lang="en">
+{% block body_block %}
+    <h1>Employee Form Information</h1>
+    <form method="post">
+      {{form.as_p}}
+      {% csrf_token %}
+        <input type="submit" name="" value="Insert Record" class="btn btn-primary">
+    </form>
+{% endblock %}
+</html>
